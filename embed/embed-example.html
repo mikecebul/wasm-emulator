@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Example webretro embed</title>
+		<style>
+			#webretro-container {
+				width: 800px;
+				height: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Super Mario World</h1>
+		<div id="webretro-container"></div>	
+		<script type="text/javascript" src="embed.js"></script>
+		<script>
+			webretroEmbed(document.getElementById("webretro-container"), "../", {system: "snes", rom: "SuperMarioWorld.smc"});
+		</script>
+	</body>
+</html>
